@@ -1,0 +1,187 @@
+/* Стили для страницы интересных фактов */
+.facts-categories {
+    margin-bottom: 50px;
+}
+
+.category-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.fact-tab {
+    padding: 12px 25px;
+    background-color: #e8d4b9;
+    border: 2px solid #d4af37;
+    border-radius: 5px;
+    color: #8b4513;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.fact-tab:hover {
+    background-color: #d4af37;
+    color: #f5e9d9;
+}
+
+.fact-tab.active {
+    background-color: #8b4513;
+    color: #f5e9d9;
+    border-color: #8b4513;
+}
+
+.facts-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.fact-category {
+    display: none;
+}
+
+.fact-category.active {
+    display: block;
+    animation: fadeIn 0.5s ease;
+}
+
+.fact-category h2 {
+    color: #8b4513;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.fact-category h2 i {
+    margin-right: 10px;
+}
+
+/* Карточки фактов */
+.fact-card {
+    display: flex;
+    background-color: #f5e9d9;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    align-items: flex-start;
+    transition: transform 0.3s ease;
+}
+
+.fact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.fact-icon {
+    background-color: #8b4513;
+    color: #f5e9d9;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25px;
+    font-size: 1.8rem;
+    flex-shrink: 0;
+}
+
+.fact-content {
+    flex: 1;
+}
+
+.fact-content h3 {
+    color: #8b4513;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.fact-content p {
+    color: #654321;
+    line-height: 1.7;
+}
+
+/* Счетчик фактов */
+.facts-counter {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.facts-counter h2 {
+    color: #8b4513;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.facts-counter h2 i {
+    margin-right: 10px;
+    color: #d4af37;
+}
+
+.counter-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 25px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.counter-item {
+    background-color: #e8d4b9;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.counter-number {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #8b4513;
+    margin-bottom: 10px;
+}
+
+.counter-label {
+    font-size: 1.2rem;
+    color: #654321;
+}
+
+/* Адаптивность для страницы фактов */
+@media (max-width: 768px) {
+    .category-tabs {
+        gap: 5px;
+    }
+    
+    .fact-tab {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+    
+    .fact-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .fact-icon {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    
+    .counter-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .fact-tab {
+        padding: 8px 12px;
+        font-size: 0.8rem;
+    }
+    
+    .counter-grid {
+        grid-template-columns: 1fr;
+    }
+}

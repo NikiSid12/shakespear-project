@@ -1,0 +1,381 @@
+/* Стили для страницы цитат */
+.quotes-intro {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+.intro-text p {
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+.intro-image img {
+    width: 100%;
+    border-radius: 10px;
+    border: 5px solid #d4af37;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Категории цитат */
+.quotes-categories {
+    margin-bottom: 50px;
+}
+
+.category-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.quote-category-btn {
+    padding: 12px 25px;
+    background-color: #e8d4b9;
+    border: 2px solid #d4af37;
+    border-radius: 5px;
+    color: #8b4513;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.quote-category-btn:hover {
+    background-color: #d4af37;
+    color: #f5e9d9;
+}
+
+.quote-category-btn.active {
+    background-color: #8b4513;
+    color: #f5e9d9;
+    border-color: #8b4513;
+}
+
+.quotes-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.quote-category {
+    display: none;
+}
+
+.quote-category.active {
+    display: block;
+    animation: fadeIn 0.5s ease;
+}
+
+.quote-category h2 {
+    color: #8b4513;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.quote-category h2 i {
+    margin-right: 10px;
+}
+
+.quote-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.quote-item {
+    background-color: #f5e9d9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    border-left: 5px solid #d4af37;
+    transition: transform 0.3s ease;
+}
+
+.quote-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.quote-item::before {
+    content: '"';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 4rem;
+    color: rgba(139, 69, 19, 0.2);
+    font-family: Georgia, serif;
+}
+
+.quote-text {
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #3a2c1a;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    position: relative;
+    z-index: 1;
+}
+
+.quote-source {
+    color: #8b4513;
+    font-weight: bold;
+    text-align: right;
+    font-size: 1rem;
+}
+
+/* Случайная цитата */
+.random-quote {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.random-quote h2 {
+    color: #8b4513;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.random-quote h2 i {
+    margin-right: 10px;
+    color: #d4af37;
+}
+
+.random-quote-container {
+    background-color: #e8d4b9;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.random-quote-text {
+    font-style: italic;
+    font-size: 1.5rem;
+    color: #3a2c1a;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.random-quote-source {
+    color: #8b4513;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+}
+
+.random-button {
+    padding: 12px 30px;
+    background-color: #8b4513;
+    color: #f5e9d9;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+}
+
+.random-button:hover {
+    background-color: #a0522d;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.random-button i {
+    margin-right: 10px;
+}
+
+/* Цитаты по пьесам */
+.quotes-by-play {
+    margin-bottom: 50px;
+}
+
+.quotes-by-play h2 {
+    color: #8b4513;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.quotes-by-play h2 i {
+    margin-right: 10px;
+    color: #d4af37;
+}
+
+.plays-accordion {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.accordion-item {
+    margin-bottom: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-header {
+    width: 100%;
+    padding: 20px 25px;
+    background-color: #8b4513;
+    color: #f5e9d9;
+    border: none;
+    text-align: left;
+    font-size: 1.3rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-header:hover {
+    background-color: #a0522d;
+}
+
+.accordion-header i {
+    transition: transform 0.3s ease;
+}
+
+.accordion-item.active .accordion-header i {
+    transform: rotate(180deg);
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background-color: #f5e9d9;
+}
+
+.accordion-item.active .accordion-content {
+    max-height: 500px;
+}
+
+.play-quotes {
+    padding: 25px;
+}
+
+.play-quote {
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px dashed #d4af37;
+}
+
+.play-quote:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.quote-context {
+    color: #8b4513;
+    font-size: 0.95rem;
+    font-style: italic;
+    margin-top: 8px;
+}
+
+/* Крылатые выражения */
+.famous-phrases {
+    margin-bottom: 50px;
+}
+
+.famous-phrases h2 {
+    color: #8b4513;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.famous-phrases h2 i {
+    margin-right: 10px;
+    color: #d4af37;
+}
+
+.phrases-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.phrase-item {
+    background-color: #f5e9d9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #d4af37;
+}
+
+.phrase-text {
+    font-weight: bold;
+    color: #3a2c1a;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+
+.phrase-source {
+    color: #8b4513;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+/* Адаптивность для страницы цитат */
+@media (max-width: 768px) {
+    .quotes-intro {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .category-buttons {
+        gap: 5px;
+    }
+    
+    .quote-category-btn {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+    
+    .quote-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .random-quote-container {
+        padding: 30px 20px;
+    }
+    
+    .random-quote-text {
+        font-size: 1.3rem;
+    }
+    
+    .phrases-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .quote-category-btn {
+        padding: 8px 12px;
+        font-size: 0.8rem;
+    }
+    
+    .quote-item {
+        padding: 25px 20px;
+    }
+    
+    .accordion-header {
+        padding: 15px 20px;
+        font-size: 1.1rem;
+    }
+}

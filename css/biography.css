@@ -1,0 +1,292 @@
+/* Стили для страницы биографии */
+.bio-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Введение */
+.bio-intro {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+.intro-image img {
+    width: 100%;
+    border-radius: 10px;
+    border: 5px solid #d4af37;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.intro-text h2 {
+    color: #8b4513;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.intro-text p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+
+/* Полная хронология */
+.timeline-full {
+    margin-bottom: 50px;
+}
+
+.timeline-full h2 {
+    color: #8b4513;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.timeline-full h2 i {
+    margin-right: 10px;
+    color: #d4af37;
+}
+
+.timeline-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline-container::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 100%;
+    background-color: #d4af37;
+}
+
+.timeline-event {
+    margin-bottom: 40px;
+    position: relative;
+    width: 45%;
+}
+
+.timeline-event.left {
+    left: 0;
+}
+
+.timeline-event.right {
+    left: 55%;
+}
+
+.event-date {
+    position: absolute;
+    top: 0;
+    background-color: #8b4513;
+    color: #f5e9d9;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.timeline-event.left .event-date {
+    right: -70px;
+}
+
+.timeline-event.right .event-date {
+    left: -70px;
+}
+
+.event-card {
+    background-color: #f5e9d9;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #8b4513;
+}
+
+.event-card h3 {
+    color: #8b4513;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+.event-card p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.event-details {
+    background-color: #e8d4b9;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.event-details p {
+    margin-bottom: 5px;
+}
+
+/* Семья Шекспира */
+.bio-family {
+    margin-bottom: 50px;
+}
+
+.bio-family h2 {
+    color: #8b4513;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.bio-family h2 i {
+    margin-right: 10px;
+    color: #d4af37;
+}
+
+.family-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.family-member {
+    background-color: #f5e9d9;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.family-member:hover {
+    transform: translateY(-5px);
+}
+
+.member-icon {
+    background-color: #8b4513;
+    color: #f5e9d9;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 15px;
+    font-size: 1.8rem;
+}
+
+.family-member h3 {
+    color: #8b4513;
+    margin-bottom: 5px;
+    font-size: 1.3rem;
+}
+
+.member-relation {
+    color: #d4af37;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+}
+
+.family-member p {
+    color: #654321;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Наследие */
+.bio-legacy {
+    margin-bottom: 50px;
+}
+
+.bio-legacy h2 {
+    color: #8b4513;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.bio-legacy h2 i {
+    margin-right: 10px;
+    color: #d4af37;
+}
+
+.legacy-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.legacy-text p {
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+.legacy-text ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.legacy-text li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.legacy-image img {
+    width: 100%;
+    border-radius: 10px;
+    border: 5px solid #d4af37;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Адаптивность для страницы биографии */
+@media (max-width: 768px) {
+    .bio-intro {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .timeline-container::before {
+        left: 30px;
+    }
+    
+    .timeline-event {
+        width: calc(100% - 60px);
+        left: 60px !important;
+    }
+    
+    .timeline-event.left .event-date,
+    .timeline-event.right .event-date {
+        left: -80px;
+        right: auto;
+    }
+    
+    .family-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .legacy-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .family-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .event-card {
+        padding: 20px;
+    }
+    
+    .family-member {
+        padding: 20px;
+    }
+}

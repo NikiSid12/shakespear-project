@@ -1,0 +1,308 @@
+/* Стили для главной страницы */
+.welcome-page {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.welcome-title h1 {
+    font-size: 3.5rem;
+    color: #8b4513;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(139, 69, 19, 0.2);
+}
+
+.title-decoration {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.title-decoration i {
+    font-size: 2.5rem;
+    color: #d4af37;
+    animation: float 3s ease-in-out infinite;
+}
+
+.title-decoration i:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.title-decoration i:nth-child(3) {
+    animation-delay: 1s;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.welcome-subtitle {
+    font-size: 1.5rem;
+    color: #654321;
+    margin-bottom: 40px;
+    font-style: italic;
+}
+
+/* Главный портрет */
+.main-portrait {
+    margin: 40px 0;
+}
+
+.portrait-frame {
+    border: 8px solid #d4af37;
+    border-radius: 10px;
+    padding: 8px;
+    background-color: #3a2c1a;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.shakespeare-img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+.portrait-quote {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.quote-text {
+    font-style: italic;
+    font-size: 1.5rem;
+    color: #8b4513;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.quote-source {
+    font-size: 1.1rem;
+    color: #654321;
+    font-style: italic;
+}
+
+/* Быстрая статистика */
+.quick-stats {
+    margin: 50px 0;
+}
+
+.quick-stats h2 {
+    color: #8b4513;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.quick-stats h2 i {
+    margin-right: 10px;
+    color: #d4af37;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.stat-card {
+    background-color: #e8d4b9;
+    padding: 25px 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #8b4513;
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    font-size: 1.1rem;
+    color: #654321;
+}
+
+/* Ссылки на страницы */
+.page-links {
+    margin: 50px 0;
+}
+
+.page-links h2 {
+    color: #8b4513;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.page-links h2 i {
+    margin-right: 10px;
+    color: #d4af37;
+}
+
+.links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.page-link {
+    display: flex;
+    align-items: center;
+    background-color: #f5e9d9;
+    padding: 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #3a2c1a;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.page-link:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    border-color: #d4af37;
+    background-color: #e8d4b9;
+}
+
+.link-icon {
+    background-color: #8b4513;
+    color: #f5e9d9;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    font-size: 1.8rem;
+    flex-shrink: 0;
+}
+
+.link-content h3 {
+    color: #8b4513;
+    margin-bottom: 8px;
+    font-size: 1.4rem;
+}
+
+.link-content p {
+    color: #654321;
+    font-size: 0.95rem;
+}
+
+/* Мини-хронология */
+.timeline-preview {
+    margin: 50px 0;
+}
+
+.timeline-preview h2 {
+    color: #8b4513;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.timeline-preview h2 i {
+    margin-right: 10px;
+    color: #d4af37;
+}
+
+.timeline-mini {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline-item {
+    background-color: #8b4513;
+    color: #f5e9d9;
+    padding: 15px 20px;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 150px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.timeline-date {
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+    color: #d4af37;
+}
+
+.timeline-content {
+    font-size: 0.95rem;
+}
+
+/* Адаптивность для главной страницы */
+@media (max-width: 768px) {
+    .welcome-title h1 {
+        font-size: 2.5rem;
+    }
+    
+    .welcome-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .quote-text {
+        font-size: 1.3rem;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .links-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .page-link {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .welcome-title h1 {
+        font-size: 2rem;
+    }
+    
+    .title-decoration {
+        gap: 15px;
+    }
+    
+    .title-decoration i {
+        font-size: 2rem;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .timeline-mini {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .timeline-item {
+        width: 100%;
+        max-width: 250px;
+    }
+}

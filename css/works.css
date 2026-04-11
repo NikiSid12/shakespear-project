@@ -1,0 +1,313 @@
+/* Стили для страницы произведений */
+.works-stats {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px 0;
+    flex-wrap: wrap;
+}
+
+.stat-item {
+    text-align: center;
+    background-color: #e8d4b9;
+    padding: 25px 20px;
+    border-radius: 10px;
+    min-width: 120px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #8b4513;
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    font-size: 1.1rem;
+    color: #654321;
+}
+
+/* Категории произведений */
+.works-categories {
+    margin-bottom: 50px;
+}
+
+.category-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.tab-button {
+    padding: 12px 25px;
+    background-color: #e8d4b9;
+    border: 2px solid #d4af37;
+    border-radius: 5px;
+    color: #8b4513;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tab-button:hover {
+    background-color: #d4af37;
+    color: #f5e9d9;
+}
+
+.tab-button.active {
+    background-color: #8b4513;
+    color: #f5e9d9;
+    border-color: #8b4513;
+}
+
+.category-content {
+    display: none;
+}
+
+.category-content.active {
+    display: block;
+    animation: fadeIn 0.5s ease;
+}
+
+.category-content h2 {
+    color: #8b4513;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.category-content h2 i {
+    margin-right: 10px;
+}
+
+.category-description {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    color: #654321;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Карточки произведений */
+.works-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.work-card {
+    background-color: #f5e9d9;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    border-top: 5px solid;
+}
+
+.work-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.work-card.tragedy {
+    border-top-color: #8b0000;
+}
+
+.work-card.comedy {
+    border-top-color: #228b22;
+}
+
+.work-card.history {
+    border-top-color: #1e90ff;
+}
+
+.work-header {
+    background-color: #e8d4b9;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.work-header h3 {
+    color: #8b4513;
+    font-size: 1.5rem;
+}
+
+.work-year {
+    background-color: #8b4513;
+    color: #f5e9d9;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.work-content {
+    padding: 20px;
+}
+
+.work-synopsis {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #3a2c1a;
+}
+
+.work-info {
+    background-color: #e8d4b9;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 0.95rem;
+}
+
+.work-info p {
+    margin-bottom: 8px;
+}
+
+.work-info p:last-child {
+    margin-bottom: 0;
+}
+
+/* Поэзия */
+.poetry-works {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.poetry-card {
+    background-color: #f5e9d9;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #d4af37;
+}
+
+.poetry-card h3 {
+    color: #8b4513;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.poetry-card p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.sonnet-example {
+    background-color: #e8d4b9;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.sonnet-example h4 {
+    color: #8b4513;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.sonnet-text {
+    font-style: italic;
+    line-height: 1.8;
+    color: #654321;
+}
+
+/* Первое фолио */
+.first-folio {
+    margin: 50px 0;
+    background-color: #e8d4b9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.first-folio h2 {
+    color: #8b4513;
+    margin-bottom: 25px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.first-folio h2 i {
+    margin-right: 10px;
+    color: #d4af37;
+}
+
+.folio-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    align-items: center;
+}
+
+.folio-image img {
+    width: 100%;
+    border-radius: 5px;
+    border: 3px solid #8b4513;
+}
+
+.folio-text p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+
+/* Адаптивность для страницы произведений */
+@media (max-width: 768px) {
+    .works-stats {
+        gap: 20px;
+    }
+    
+    .stat-item {
+        min-width: 100px;
+        padding: 20px 15px;
+    }
+    
+    .category-tabs {
+        gap: 5px;
+    }
+    
+    .tab-button {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+    
+    .works-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .folio-content {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .works-stats {
+        gap: 15px;
+    }
+    
+    .stat-item {
+        min-width: 80px;
+        padding: 15px 10px;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    .work-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .work-year {
+        align-self: flex-end;
+    }
+}
