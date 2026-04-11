@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shakespeare's works</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/works.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="main-nav">
+            <div class="nav-brand">
+                <i class="fas fa-book-open"></i>
+                <span>Shakespeare</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item active"><a href="index.html"><i class="fas fa-home"></i> Main</a></li>
+                <li class="nav-item"><a href="biography.html"><i class="fas fa-user"></i> Biography</a></li>
+                <li class="nav-item"><a href="works.html"><i class="fas fa-scroll"></i> Works</a></li>
+                <li class="nav-item"><a href="theater.html"><i class="fas fa-theater-masks"></i> The "Globe" theater</a></li>
+                <li class="nav-item"><a href="facts.html"><i class="fas fa-lightbulb"></i> Facts</a></li>
+                <li class="nav-item"><a href="quotes.html"><i class="fas fa-quote-right"></i> Quotes</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+
+        <main class="page-content">
+            <div class="page-header">
+                <h1><i class="fas fa-scroll"></i> Shakespeare's works</h1>
+                <p class="page-subtitle">Tragedies, comedies, chronicles, sonnets and poems</p>
+            </div>
+            
+            <div class="works-stats">
+                <div class="stat-item">
+                    <div class="stat-number">38</div>
+                    <div class="stat-label">Plays</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">154</div>
+                    <div class="stat-label">Sonnets</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">4</div>
+                    <div class="stat-label">Poems</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">3</div>
+                    <div class="stat-label">Epitaphs</div>
+                </div>
+            </div>
+            
+            <div class="works-categories">
+                <div class="category-tabs">
+                    <button class="tab-button active" data-category="tragedies">Tragedies</button>
+                    <button class="tab-button" data-category="comedies">Comedies</button>
+                    <button class="tab-button" data-category="histories">Chronicles</button>
+                    <button class="tab-button" data-category="poetry">Poetry</button>
+                </div>
+                
+                <div class="category-content active" id="tragedies">
+                    <h2><i class="fas fa-skull"></i> Tragedies</h2>
+                    <p class="category-description">Shakespeare's greatest tragedies explore human nature, passion, power, and fate.</p>
+                    
+                    <div class="works-grid">
+                        <div class="work-card tragedy">
+                            <div class="work-header">
+                                <h3>Hamlet</h3>
+                                <span class="work-year">1600-1601</span>
+                            </div>
+                            <div class="work-content">
+                                <p class="work-synopsis">Prince Hamlet of Denmark avenges the murder of his father, King Hamlet, who was poisoned by his brother Claudius.</p>
+                                <div class="work-info">
+                                    <p><strong>Main characters:</strong> Hamlet, Claudius, Gertrude, Ophelia</p>
+                                    <p><strong>The famous phrase:</strong> "To be or not to be, that is the question"</p>
+                                    <br>(Быть или не быть, вот в чём вопрос)</br>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="work-card tragedy">
+                            <div class="work-header">
+                                <h3>Romeo and Juliet</h3>
+                                <span class="work-year">1595-1596</span>
+                            </div>
+                            <div class="work-content">
+                                <p class="work-synopsis">The love story of a young man and a girl from two warring Veronese families – the Montagues and the Capulets.</p>
+                                <div class="work-info">
+                                    <p><strong>Main characters:</strong> Romeo, Juliet, Mercutio, Tybalt</p>
+                                    <p><strong>The famous phrase:</strong> "What does a name mean? A rose smells like a rose, whether you call it a rose or not."</p>
+                                    <br>(Что значит имя? Роза пахнет розой, хоть розой назови ее, хоть нет)</br>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="work-card tragedy">
+                            <div class="work-header">
+                                <h3>Macbeth</h3>
+                                <span class="work-year">1606</span>
+                            </div>
+                            <div class="work-content">
+                                <p class="work-synopsis">Scottish general Macbeth, incited by his ambitious wife, murders the king to seize the throne.</p>
+                                <div class="work-info">
+                                    <p><strong>Main characters:</strong> Macbeth, Lady Macbeth, Duncan, Banquo</p>
+                                    <p><strong>The famous phrase:</strong> "Life is a story told by a fool, full of sound and fury, but devoid of meaning."</p>
+                                    <br>(Жизнь — это повесть, рассказанная дураком, полная шума и ярости, но лишенная смысла)</br>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="work-card tragedy">
+                            <div class="work-header">
+                                <h3>Othello</h3>
+                                <span class="work-year">1604</span>
+                            </div>
+                            <div class="work-content">
+                                <p class="work-synopsis">The Moor Othello, a general in the Venetian army, falls victim to the intrigues of his subordinate Iago.</p>
+                                <div class="work-info">
+                                    <p><strong>Main characters:</strong> Othello, Desdemona, Iago, Cassio</p>
+                                    <p><strong>Theme:</strong> Jealousy, betrayal, racism</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="work-card tragedy">
+                            <div class="work-header">
+                                <h3>King Lear</h3>
+                                <span class="work-year">1606</span>
+                            </div>
+                            <div class="work-content">
+                                <p class="work-synopsis">Old King Lear divides his kingdom between two flattering daughters, rejecting the sincere third.</p>
+                                <div class="work-info">
+                                    <p><strong>Main characters:</strong> King Lear, Cordelia, Goneril, Regan</p>
+                                    <p><strong>Theme:</strong> Family relationships, madness, old age</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="category-content" id="comedies">
+                    <h2><i class="fas fa-laugh"></i> Comedies</h2>
+                    <p class="category-description">Shakespeare's comedies are full of wit, love affairs and happy endings.</p>
+                    
+                    <div class="works-grid">
+                        <div class="work-card comedy">
+                            <div class="work-header">
+                                <h3>A Midsummer Night's Dream</h3>
+                                <span class="work-year">1595-1596</span>
+                            </div>
+                            <div class="work-content">
+                                <p class="work-synopsis">A twisted love story set in a magical forest on the eve of the summer solstice.</p>
+                                <div class="work-info">
+                                    <p><strong>Main characters:</strong> Oberon, Titania, Puck, Theseus</p>
+                                    <p><strong>Peculiarity:</strong> A combination of reality and fantasy</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="work-card comedy">
+                            <div class="work-header">
+                                <h3>The Taming of the Shrew</h3>
+                                <span class="work-year">1593-1594</span>
+                            </div>
+                            <div class="work-content">
+                                <p class="work-synopsis">Petruchio decides to marry the obstinate Katherina and "tames" her character.</p>
+                                <div class="work-info">
+                                    <p><strong>Main characters:</strong> Petruchio, Katarina, Bianca</p>
+                                    <p><strong>Тheme:</strong> Gender roles, marriage, parenting</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="work-card comedy">
+                            <div class="work-header">
+                                <h3>Twelfth Night</h3>
+                                <span class="work-year">1601-1602</span>
+                            </div>
+                            <div class="work-content">
+                                <p class="work-synopsis">After a shipwreck, Viola disguises herself as a man and enters the service of Duke Orsino.</p>
+                                <div class="work-info">
+                                    <p><strong>Main characters:</strong> Viola/Sebastian, Orsino, Olivia</p>
+                                    <p><strong>Peculiarity:</strong> The theme of dressing up and confusion</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="work-card comedy">
+                            <div class="work-header">
+                                <h3>Much ado about nothing</h3>
+                                <span class="work-year">1598-1599</span>
+                            </div>
+                            <div class="work-content">
+                                <p class="work-synopsis">The story of two couples: Claudio and Hero, and Benedick and Beatrice.</p>
+                                <div class="work-info">
+                                    <p><strong>Main characters:</strong> Benedick, Beatrice, Claudio, Gero</p>
+                                    <p><strong>Theme:</strong> Love, deception, wit</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="category-content" id="histories">
+                    <h2><i class="fas fa-crown"></i> Historical chronicles</h2>
+                    <p class="category-description">Plays based on English history that explore power, politics and national identity.</p>
+                    
+                    <div class="works-grid">
+                        <div class="work-card history">
+                            <div class="work-header">
+                                <h3>Richard III</h3>
+                                <span class="work-year">1592-1593</span>
+                            </div>
+                            <div class="work-content">
+                                <p class="work-synopsis">The story of Richard III, the last Yorkist king, and his rise to the throne through betrayal and murder.</p>
+                                <div class="work-info">
+                                    <p><strong>Main characters:</strong> Richard III, Queen Margaret, Duke of Buckingham</p>
+                                    <p><strong>Famous phrase:</strong> "A horse! A horse! Half a kingdom for a horse!"</p>
+                                    <br>(Коня! Коня! Полцарства за коня!)</br>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="work-card history">
+                            <div class="work-header">
+                                <h3>Henry IV</h3>
+                                <span class="work-year">1597-1598</span>
+                            </div>
+                            <div class="work-content">
+                                <p class="work-synopsis">King Henry IV fights rebels while his son Prince Hal spends time with Sir John Falstaff.</p>
+                                <div class="work-info">
+                                    <p><strong>Main characters:</strong> Henry IV, Prince Hal, Falstaff, Hotspur</p>
+                                    <p><strong>Peculiarity:</strong> A combination of serious story and comic scenes</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="work-card history">
+                            <div class="work-header">
+                                <h3>Henry V</h3>
+                                <span class="work-year">1599</span>
+                            </div>
+                            <div class="work-content">
+                                <p class="work-synopsis">Young King Henry V leads the English army to victory over the French at the Battle of Agincourt.</p>
+                                <div class="work-info">
+                                    <p><strong>Main characters:</strong> Henry V, Catherine, Fluellen</p>
+                                    <p><strong>Famous phrase:</strong> "Once upon a time on St. Crispin's Day"</p>
+                                    <br>"Однажды в день Святого Криспина"</br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="category-content" id="poetry">
+                    <h2><i class="fas fa-heart"></i> Poetry</h2>
+                    <p class="category-description">Shakespeare's sonnets and poems are masterpieces of love and philosophical lyrics.</p>
+                    
+                    <div class="poetry-works">
+                        <div class="poetry-card">
+                            <h3>Sonnets (1609)</h3>
+                            <p>154 sonnets, devoted to themes of love, beauty, politics, and morality. They are divided into two cycles: sonnets 1-126 are addressed to a "fair-haired youth," and sonnets 127-154 to a "dark lady."</p>
+                            <div class="sonnet-example">
+                                <h4>Sonnet 18 (fragment):</h4>
+                                <p class="sonnet-text">"Сравню ли с летним днем твои черты?<br>
+                                Но ты милей, умеренней и нежней.<br>
+                                Ломает май случайные цветы,<br>
+                                И срок прекрасный слишком коротей."</p>
+                            </div>
+                        </div>
+                        
+                        <div class="poetry-card">
+                            <h3>Venus and Adonis (Венера и Адонис) (1593)</h3>
+                            <p>Shakespeare's first published work, the poem tells the story of the goddess of love, Venus, and her unsuccessful attempts to seduce the young hunter Adonis.</p>
+                        </div>
+                        
+                        <div class="poetry-card">
+                            <h3>Dishonored Lucretia (Обесчещенная Лукреция) (1594)</h3>
+                            <p>A poem about the virtuous Roman woman Lucretia, who was raped by the son of King Tarquinius and committed suicide, which led to an uprising and the establishment of a republic.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="first-folio">
+                <h2><i class="fas fa-book"></i> First Folio</h2>    
+                <div class="folio-content">
+                    <div class="folio-image">
+                        <img src="./imgs/First_Folio_VA.jpg" 
+                             alt="Первое фолио Шекспира">
+                    </div>
+                    <div class="folio-text">
+                        <p><strong>Первое фолио (First folio)</strong> — собрание пьес Уильяма Шекспира, изданное в 1623 году, через семь лет после его смерти. Составлено его друзьями-актерами Джоном Хемингом и Генри Конделом.</p>
+                        <p>В Первое фолио вошли 36 пьес, 18 из которых ранее не публиковались. Без этого издания такие пьесы, как "Макбет", "Буря", "Двенадцатая ночь" и "Юлий Цезарь", могли бы быть потеряны навсегда.</p>
+                        <p>Сегодня сохранилось около 235 экземпляров Первого фолио, каждый из которых оценивается в миллионы долларов.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="page-navigation">
+                <a href="biography.html" class="nav-button prev-button">
+                    <i class="fas fa-arrow-left"></i> Биография
+                </a>
+                <a href="theater.html" class="nav-button next-button">
+                    Театр "Глобус" <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </main>
+        
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Произведения Шекспира</h3>
+                    <p>Исследуйте мир шекспировских пьес и поэзии</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Жанры</h3>
+                    <p>Трагедии, комедии, хроники, поэзия</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Навигация</h3>
+                    <ul class="footer-nav">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="biography.html">Биография</a></li>
+                        <li><a href="theater.html">Театр "Глобус"</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Лэпбук об Уильяме Шекспире. Проект 7А</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/works.js"></script>
+</body>
+</html>

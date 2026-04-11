@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интересные факты о Шекспире</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/facts.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="main-nav">
+            <div class="nav-brand">
+                <i class="fas fa-book-open"></i>
+                <span>Шекспир</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html"><i class="fas fa-home"></i> Главная</a></li>
+                <li class="nav-item"><a href="biography.html"><i class="fas fa-user"></i> Биография</a></li>
+                <li class="nav-item"><a href="works.html"><i class="fas fa-scroll"></i> Произведения</a></li>
+                <li class="nav-item"><a href="theater.html"><i class="fas fa-theater-masks"></i> Театр "Глобус"</a></li>
+                <li class="nav-item active"><a href="facts.html"><i class="fas fa-lightbulb"></i> Факты</a></li>
+                <li class="nav-item"><a href="quotes.html"><i class="fas fa-quote-right"></i> Цитаты</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+
+        <main class="page-content">
+            <div class="page-header">
+                <h1><i class="fas fa-lightbulb"></i> Интересные факты о Шекспире</h1>
+                <p class="page-subtitle">Малоизвестные подробности о жизни и творчестве великого драматурга</p>
+            </div>
+            
+            <div class="facts-categories">
+                <div class="category-tabs">
+                    <button class="fact-tab active" data-category="life">Жизнь</button>
+                    <button class="fact-tab" data-category="language">Язык</button>
+                    <button class="fact-tab" data-category="mysteries">Загадки</button>
+                    <button class="fact-tab" data-category="legacy">Наследие</button>
+                    <button class="fact-tab" data-category="fun">Забавные факты</button>
+                </div>
+                
+                <div class="facts-container">
+                    <!-- Жизнь -->
+                    <div class="fact-category active" id="life">
+                        <h2><i class="fas fa-user"></i> Факты из жизни Шекспира</h2>
+                        
+                        <div class="fact-card">
+                            <div class="fact-icon"><i class="fas fa-birthday-cake"></i></div>
+                            <div class="fact-content">
+                                <h3>Точная дата рождения неизвестна</h3>
+                                <p>Шекспир был крещен 26 апреля 1564 года. Принято считать, что он родился 23 апреля, в день Святого Георгия, но документального подтверждения этому нет.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="fact-card">
+                            <div class="fact-icon"><i class="fas fa-graduation-cap"></i></div>
+                            <div class="fact-content">
+                                <h3>Образование в начальной школе</h3>
+                                <p>Шекспир учился в стратфордской грамматической школе, где изучал латынь и классическую литературу. Высшего образования он не получил, что породило "шекспировский вопрос".</p>
+                            </div>
+                        </div>
+                        
+                        <div class="fact-card">
+                            <div class="fact-icon"><i class="fas fa-ring"></i></div>
+                            <div class="fact-content">
+                                <h3>Странный брак</h3>
+                                <p>Шекспир женился на Энн Хатауэй, когда ему было 18 лет, а ей — 26. Брак был заключен поспешно: после получения разрешения на брак 27 ноября 1582 года, уже 28 ноября состоялась свадьба.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="fact-card">
+                            <div class="fact-icon"><i class="fas fa-home"></i></div>
+                            <div class="fact-content">
+                                <h3>Успешный бизнесмен</h3>
+                                <p>Шекспир был не только драматургом, но и успешным бизнесменом. Он владел долей в театре "Глобус", покупал недвижимость в Стратфорде и Лондоне, ссужал деньги под проценты.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="fact-card">
+                            <div class="fact-icon"><i class="fas fa-tombstone"></i></div>
+                            <div class="fact-content">
+                                <h3>Проклятие на могиле</h3>
+                                <p>На надгробии Шекспира в церкви Святой Троицы в Стратфорде выгравировано проклятие: "Друг, ради Господа, не рой останков, взятых сей землей; не тронувший блажен в веках, и проклят — тронувший мой прах".</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Язык -->
+                    <div class="fact-category" id="language">
+                        <h2><i class="fas fa-language"></i> Шекспир и английский язык</h2>
+                        
+                        <div class="fact-card">
+                            <div class="fact-icon"><i class="fas fa-keyboard"></i></div>
+                            <div class="fact-content">
+                                <h3>Изобретатель слов</h3>
+                                <p>Шекспир ввел в английский язык более 1700 слов, которые мы используем сегодня. Среди них: "addiction" (зависимость), "bedroom" (спальня), "eyeball" (глазное яблоко), "fashionable" (модный), "lonely" (одинокий).</p>
+                            </div>
+                        </div>
+                        
+                        <div class="fact-card">
+                            <div class="fact-icon"><i class="fas fa-quote-right"></i></div>
+                            <div class="fact-content">
+                                <h3>Автор популярных фраз</h3>
+                                <p>Многие фразы, которые мы используем сегодня, впервые появились в произведениях Шекспира: "быть или не быть", "весь мир — театр", "не всё то золото, что блестит", "леди протестует слишком много".</p>
+                            </div>
+                        </div>
+                        
+                        <div class="fact-card">
+                            <div class="fact-icon"><i class="fas fa-book"></i></div>
+                            <div class="fact-content">
+                                <h3>Словарь Шекспира</h3>
+                                <p>Словарный запас Шекспира оценивается в 17 000-29 000 слов (для сравнения: средний образованный человек использует около 3 000-5 000 слов). В Библии короля Якова используется около 8 000 разных слов.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="fact-card">
+                            <div class="fact-icon"><i class="fas fa-spell-check"></i></div>
+                            <div class="fact-content">
+                                <h3>Разные варианты написания</h3>
+                                <p>Фамилия Шекспира в документах встречается в более чем 80 вариантах написания, включая Shakespear, Shakspear, Shakspere и даже Shaxberd. Сам драматург подписывался по-разному в разных документах.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Загадки -->
+                    <div class="fact-category" id="mysteries">
+                        <h2><i class="fas fa-question-circle"></i> Загадки и мистификации</h2>
+                        
+                        <div class="fact-card">
+                            <div class="fact-icon"><i class="fas fa-user-secret"></i></div>
+                            <div class="fact-content">
+                                <h3>Шекспировский вопрос</h3>
+                                <p>Некоторые исследователи сомневаются, что человек по имени Уильям Шекспир из Стратфорда написал все приписываемые ему произведения. В качестве возможных авторов называют Фрэнсиса Бэкона, Кристофера Марло, Эдварда де Вера.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="fact-card">
+                            <div class="fact-icon"><i class="fas fa-portrait"></i></div>
+                            <div class="fact-content">
+                                <h3>Загадка портретов</h3>
+                                <p>Не существует прижизненных портретов Шекспира, написанных с натуры. Самый известный портрет — гравюра Мартина Друшаута из Первого фолио (1623). Также существует Чандосовский портрет, но его атрибуция спорна.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="fact-card">
+                            <div class="fact-icon"><i class="fas fa-mask"></i></div>
+                            <div class="fact-content">
+                                <h3>Утерянные годы</h3>
+                                <p>О жизни Шекспира с 1585 по 1592 годы (между рождением близнецов и появлением в Лондоне) ничего не известно. Этот период называют "утраченными годами". Существуют различные теории: был учителем, солдатом, юристом, путешествовал по Европе.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="fact-card">
+                            <div class="fact-icon"><i class="fas fa-book-dead"></i></div>
+                            <div class="fact-content">
+                                <h3>Проклятие "Макбета"</h3>
+                                <p>В театральной среде существует суеверие, что произносить название пьесы "Макбет" в театре — к несчастью. Актеры называют её "шотландской пьесой". Считается, что Шекспир использовал в пьесе подлинные заклинания ведьм.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Наследие -->
+                    <div class="fact-category" id="legacy">
+                        <h2><i class="fas fa-monument"></i> Наследие и влияние</h2>
+                        
+                        <div class="fact-card">
+                            <div class="fact-icon"><i class="fas fa-film"></i></div>
+                            <div class="fact-content">
+                                <h3>Рекордные экранизации</h3>
+                                <p>Произведения Шекспира экранизированы более 400 раз — это рекорд среди всех писателей. "Гамлет" экранизирован более 50 раз, "Ромео и Джульетта" — более 40 раз. Первая экранизация была сделана в 1899 году.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="fact-card">
+                            <div class="fact-icon"><i class="fas fa-globe"></i></div>
+                            <div class="fact-content">
+                                <h3>Шекспир в космосе</h3>
+                                <p>На Меркурии есть кратер Шекспир диаметром 400 км. Также в честь Шекспира названы астероид (2985 Shakespeare) и кратеры на спутниках Урана — Миранде и Обероне.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="fact-card">
+                            <div class="fact-icon"><i class="fas fa-calendar-alt"></i></div>
+                            <div class="fact-content">
+                                <h3>День Шекспира</h3>
+                                <p>23 апреля отмечается как День Шекспира — в эту дату (по юлианскому календарю) умер Шекспир. Также 23 апреля — Всемирный день книги и авторского права.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="fact-card">
+                            <div class="fact-icon"><i class="fas fa-monument"></i></div>
+                            <div class="fact-content">
+                                <h3>Памятники по всему миру</h3>
+                                <p>Памятники Шекспиру установлены в Лондоне, Стратфорде, Нью-Йорке, Сан-Франциско, Мельбурне, Буэнос-Айресе и многих других городах мира. В Центральном парке Нью-Йорка стоит единственный памятник Шекспиру, где он изображен сидящим.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Забавные факты -->
+                    <div class="fact-category" id="fun">
+                        <h2><i class="fas fa-laugh"></i> Забавные и курьезные факты</h2>
+                        
+                        <div class="fact-card">
+                            <div class="fact-icon"><i class="fas fa-beer"></i></div>
+                            <div class="fact-content">
+                                <h3>Пивоварня Шекспира</h3>
+                                <p>В 2016 году к 400-летию со дня смерти Шекспира британская пивоварня выпустила пиво "Shakespeare's Birthplace", сваренное по рецепту XVI века. В состав входили ячмень, хмель и дикий розмарин.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="fact-card">
+                            <div class="fact-icon"><i class="fas fa-cat"></i></div>
+                            <div class="fact-content">
+                                <h3>Кот Шекспира</h3>
+                                <p>В произведениях Шекспира упоминается более 50 различных животных, но ни разу — кошки. При этом в пьесах есть отсылки к тиграм, львам и леопардам.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="fact-card">
+                            <div class="fact-icon"><i class="fas fa-ghost"></i></div>
+                            <div class="fact-content">
+                                <h3>Призрак в "Гамлете"</h3>
+                                <p>Призрак отца Гамлета — один из самых знаменитых призраков в мировой литературе. Интересно, что в оригинальном тексте призрак говорит 90 строк, а в некоторых постановках вообще молчит.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="fact-card">
+                            <div class="fact-icon"><i class="fas fa-user-md"></i></div>
+                            <div class="fact-content">
+                                <h3>Шекспир и медицина</h3>
+                                <p>В произведениях Шекспира упоминается более 700 медицинских терминов и описано 64 различных болезни. Некоторые исследователи считают, что Шекспир мог работать аптекарем или врачом.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="fact-card">
+                            <div class="fact-icon"><i class="fas fa-camera"></i></div>
+                            <div class="fact-content">
+                                <h3>Фотография "призрака" Шекспира</h3>
+                                <p>В 1869 году была сделана фотография, на которой якобы был запечатлен призрак Шекспира. На самом деле это был двойная экспозиция. Фотография стала популярной и породила множество легенд.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="facts-counter">
+                <h2><i class="fas fa-chart-line"></i> Шекспир в цифрах</h2>
+                <div class="counter-grid">
+                    <div class="counter-item">
+                        <div class="counter-number" data-count="38">0</div>
+                        <div class="counter-label">Пьес</div>
+                    </div>
+                    <div class="counter-item">
+                        <div class="counter-number" data-count="154">0</div>
+                        <div class="counter-label">Сонетов</div>
+                    </div>
+                    <div class="counter-item">
+                        <div class="counter-number" data-count="1700">0</div>
+                        <div class="counter-label">Новых слов</div>
+                    </div>
+                    <div class="counter-item">
+                        <div class="counter-number" data-count="400">0</div>
+                        <div class="counter-label">Экранизаций</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="page-navigation">
+                <a href="theater.html" class="nav-button prev-button">
+                    <i class="fas fa-arrow-left"></i> Театр "Глобус"
+                </a>
+                <a href="quotes.html" class="nav-button next-button">
+                    Цитаты Шекспира <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </main>
+        
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Интересные факты</h3>
+                    <p>Откройте малоизвестные стороны жизни Шекспира</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Категории</h3>
+                    <p>Жизнь, язык, загадки, наследие, курьезы</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Навигация</h3>
+                    <ul class="footer-nav">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="theater.html">Театр "Глобус"</a></li>
+                        <li><a href="quotes.html">Цитаты</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Лэпбук об Уильяме Шекспире. Проект 7А</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/facts.js"></script>
+</body>
+</html>

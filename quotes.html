@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цитаты Шекспира</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/quotes.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="main-nav">
+            <div class="nav-brand">
+                <i class="fas fa-book-open"></i>
+                <span>Шекспир</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html"><i class="fas fa-home"></i> Главная</a></li>
+                <li class="nav-item"><a href="biography.html"><i class="fas fa-user"></i> Биография</a></li>
+                <li class="nav-item"><a href="works.html"><i class="fas fa-scroll"></i> Произведения</a></li>
+                <li class="nav-item"><a href="theater.html"><i class="fas fa-theater-masks"></i> Театр "Глобус"</a></li>
+                <li class="nav-item"><a href="facts.html"><i class="fas fa-lightbulb"></i> Факты</a></li>
+                <li class="nav-item active"><a href="quotes.html"><i class="fas fa-quote-right"></i> Цитаты</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+
+        <main class="page-content">
+            <div class="page-header">
+                <h1><i class="fas fa-quote-right"></i> Цитаты Шекспира</h1>
+                <p class="page-subtitle">Мудрые и вечные слова великого драматурга</p>
+            </div>
+            
+            <div class="quotes-intro">
+                <div class="intro-text">
+                    <p>Уильям Шекспир оставил после себя не только великие пьесы, но и бессмертные фразы, которые мы используем до сих пор. Многие из его высказываний стали крылатыми выражениями, пословицами и поговорками.</p>
+                    <p>Ниже представлены самые известные цитаты из произведений Шекспира, сгруппированные по темам.</p>
+                </div>
+                <div class="intro-image">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Shakespeare.jpg/250px-Shakespeare.jpg" 
+                         alt="Шекспир">
+                </div>
+            </div>
+            
+            <div class="quotes-categories">
+                <div class="category-buttons">
+                    <button class="quote-category-btn active" data-category="all">Все цитаты</button>
+                    <button class="quote-category-btn" data-category="love">Любовь</button>
+                    <button class="quote-category-btn" data-category="life">Жизнь</button>
+                    <button class="quote-category-btn" data-category="wisdom">Мудрость</button>
+                    <button class="quote-category-btn" data-category="famous">Знаменитые</button>
+                </div>
+                
+                <div class="quotes-container">
+                    <!-- Все цитаты -->
+                    <div class="quote-category active" id="all">
+                        <div class="quote-grid">
+                            <!-- Цитаты будут добавлены через JavaScript -->
+                        </div>
+                    </div>
+                    
+                    <!-- Любовь -->
+                    <div class="quote-category" id="love">
+                        <h2><i class="fas fa-heart"></i> О любви</h2>
+                        <div class="quote-grid">
+                            <!-- Цитаты будут добавлены через JavaScript -->
+                        </div>
+                    </div>
+                    
+                    <!-- Жизнь -->
+                    <div class="quote-category" id="life">
+                        <h2><i class="fas fa-life-ring"></i> О жизни</h2>
+                        <div class="quote-grid">
+                            <!-- Цитаты будут добавлены через JavaScript -->
+                        </div>
+                    </div>
+                    
+                    <!-- Мудрость -->
+                    <div class="quote-category" id="wisdom">
+                        <h2><i class="fas fa-brain"></i> Мудрые мысли</h2>
+                        <div class="quote-grid">
+                            <!-- Цитаты будут добавлены через JavaScript -->
+                        </div>
+                    </div>
+                    
+                    <!-- Знаменитые -->
+                    <div class="quote-category" id="famous">
+                        <h2><i class="fas fa-star"></i> Знаменитые цитаты</h2>
+                        <div class="quote-grid">
+                            <!-- Цитаты будут добавлены через JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="random-quote">
+                <h2><i class="fas fa-random"></i> Случайная цитата</h2>
+                <div class="random-quote-container">
+                    <div class="random-quote-text" id="randomQuote">
+                        Нажмите кнопку, чтобы получить случайную цитату
+                    </div>
+                    <div class="random-quote-source" id="randomSource"></div>
+                    <button class="random-button" id="randomButton">
+                        <i class="fas fa-redo"></i> Новая цитата
+                    </button>
+                </div>
+            </div>
+            
+            <div class="quotes-by-play">
+                <h2><i class="fas fa-theater-masks"></i> Цитаты по пьесам</h2>
+                
+                <div class="plays-accordion">
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span class="play-title">Гамлет</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="play-quotes">
+                                <div class="play-quote">
+                                    <p class="quote-text">"Быть или не быть — вот в чем вопрос."</p>
+                                    <p class="quote-context">Акт III, сцена 1</p>
+                                </div>
+                                <div class="play-quote">
+                                    <p class="quote-text">"Слова, слова, слова."</p>
+                                    <p class="quote-context">Акт II, сцена 2</p>
+                                </div>
+                                <div class="play-quote">
+                                    <p class="quote-text">"Есть многое на свете, друг Горацио, что и не снилось нашим мудрецам."</p>
+                                    <p class="quote-context">Акт I, сцена 5</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span class="play-title">Ромео и Джульетта</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="play-quotes">
+                                <div class="play-quote">
+                                    <p class="quote-text">"Что значит имя? Роза пахнет розой, хоть розой назови ее, хоть нет."</p>
+                                    <p class="quote-context">Акт II, сцена 2</p>
+                                </div>
+                                <div class="play-quote">
+                                    <p class="quote-text">"Прощай, прощай! Разлука так сладка, что я скажу "прощай" до вечера."</p>
+                                    <p class="quote-context">Акт II, сцена 2</p>
+                                </div>
+                                <div class="play-quote">
+                                    <p class="quote-text">"Любовь бежит от тех, кто гонится за нею, а тем, кто прочь бежит, кидается на шею."</p>
+                                    <p class="quote-context">Акт II, сцена 2</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span class="play-title">Макбет</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="play-quotes">
+                                <div class="play-quote">
+                                    <p class="quote-text">"Жизнь — это повесть, рассказанная дураком, полная шума и ярости, но лишенная смысла."</p>
+                                    <p class="quote-context">Акт V, сцена 5</p>
+                                </div>
+                                <div class="play-quote">
+                                    <p class="quote-text">"Приди ко мне, о ночь, одетая в самую черную адскую тьму!"</p>
+                                    <p class="quote-context">Акт I, сцена 5</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <button class="accord-menu">
+                            <span class="play-title">Король Лир</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="play-quotes">
+                                <div class="play-quote">
+                                    <p class="quote-text">"Как муху нас убить иной готов, а мы для некой твари — божья милость."</p>
+                                    <p class="quote-context">Акт IV, сцена 1</p>
+                                </div>
+                                <div class="play-quote">
+                                    <p class="quote-text">"Ничто не рождается из ничего."</p>
+                                    <p class="quote-context">Акт I, сцена 1</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span class="play-title">Отелло</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="play-quotes">
+                                <div class="play-quote">
+                                    <p class="quote-text">"Остерегайтесь ревности, зеленоглазого чудовища, которое глумится над своей жертвой."</p>
+                                    <p class="quote-context">Акт III, сцена 3</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="famous-phrases">
+                <h2><i class="fas fa-comment"></i> Крылатые выражения Шекспира</h2>
+                <div class="phrases-list">
+                    <div class="phrase-item">
+                        <div class="phrase-text">Весь мир — театр, а люди в нем — актеры</div>
+                        <div class="phrase-source">"Как вам это понравится"</div>
+                    </div>
+                    <div class="phrase-item">
+                        <div class="phrase-text">Быть или не быть — вот в чем вопрос</div>
+                        <div class="phrase-source">"Гамлет"</div>
+                    </div>
+                    <div class="phrase-item">
+                        <div class="phrase-text">Не всё то золото, что блестит</div>
+                        <div class="phrase-source">"Венецианский купец"</div>
+                    </div>
+                    <div class="phrase-item">
+                        <div class="phrase-text">Леди протестует слишком много</div>
+                        <div class="phrase-source">"Гамлет"</div>
+                    </div>
+                    <div class="phrase-item">
+                        <div class="phrase-text">Разрубить гордиев узел</div>
+                        <div class="phrase-source">"Генрих V"</div>
+                    </div>
+                    <div class="phrase-item">
+                        <div class="phrase-text">Сладость мести</div>
+                        <div class="phrase-source">"Венецианский купец"</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="page-navigation">
+                <a href="facts.html" class="nav-button prev-button">
+                    <i class="fas fa-arrow-left"></i> Интересные факты
+                </a>
+                <a href="index.html" class="nav-button next-button">
+                    На главную <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </main>
+        
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Цитаты Шекспира</h3>
+                    <p>Мудрые слова, которые пережили века</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Темы</h3>
+                    <p>Любовь, жизнь, мудрость, знаменитые высказывания</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Навигация</h3>
+                    <ul class="footer-nav">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="facts.html">Интересные факты</a></li>
+                        <li><a href="works.html">Произведения</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Лэпбук об Уильяме Шекспире. Проект 7А</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/quotes.js"></script>
+</body>
+</html>
