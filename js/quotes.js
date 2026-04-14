@@ -2,82 +2,82 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Массив цитат Шекспира
     const quotes = [
-        {
-            text: "Быть или не быть — вот в чем вопрос.",
-            source: "Гамлет",
-            category: "famous"
-        },
-        {
-            text: "Весь мир — театр, а люди в нем — актеры.",
-            source: "Как вам это понравится",
-            category: "life"
-        },
-        {
-            text: "Любовь бежит от тех, кто гонится за нею, а тем, кто прочь бежит, кидается на шею.",
-            source: "Ромео и Джульетта",
-            category: "love"
-        },
-        {
-            text: "Что значит имя? Роза пахнет розой, хоть розой назови ее, хоть нет.",
-            source: "Ромео и Джульетта",
-            category: "wisdom"
-        },
-        {
-            text: "Жизнь — это повесть, рассказанная дураком, полная шума и ярости, но лишенная смысла.",
-            source: "Макбет",
-            category: "life"
-        },
-        {
-            text: "Слова, слова, слова.",
-            source: "Гамлет",
-            category: "famous"
-        },
-        {
-            text: "Есть многое на свете, друг Горацио, что и не снилось нашим мудрецам.",
-            source: "Гамлет",
-            category: "wisdom"
-        },
-        {
-            text: "Прощай, прощай! Разлука так сладка, что я скажу 'прощай' до вечера.",
-            source: "Ромео и Джульетта",
-            category: "love"
-        },
-        {
-            text: "Остерегайтесь ревности, зеленоглазого чудовища, которое глумится над своей жертвой.",
-            source: "Отелло",
-            category: "wisdom"
-        },
-        {
-            text: "Не всё то золото, что блестит.",
-            source: "Венецианский купец",
-            category: "famous"
-        },
-        {
-            text: "Любовь слепа, и любовники не видят смешных шалостей, которые сами творят.",
-            source: "Венецианский купец",
-            category: "love"
-        },
-        {
-            text: "Музыка — пища любви.",
-            source: "Двенадцатая ночь",
-            category: "love"
-        },
-        {
-            text: "Нет повести печальнее на свете, чем повесть о Ромео и Джульетте.",
-            source: "Ромео и Джульетта",
-            category: "love"
-        },
-        {
-            text: "Сомневайся в сиянии звезд, сомневайся в движении солнца, сомневайся в истине, но никогда не сомневайся в моей любви.",
-            source: "Гамлет",
-            category: "love"
-        },
-        {
-            text: "Мы знаем, кто мы есть, но не знаем, кем мы можем быть.",
-            source: "Гамлет",
-            category: "wisdom"
-        }
-    ];
+    {
+        text: "To be, or not to be: that is the question.",
+        source: "Hamlet",
+        category: "famous"
+    },
+    {
+        text: "All the world's a stage, and all the men and women merely players.",
+        source: "As You Like It",
+        category: "life"
+    },
+    {
+        text: "Love looks not with the eyes, but with the mind.",
+        source: "A Midsummer Night’s Dream",
+        category: "love"
+    },
+    {
+        text: "What's in a name? That which we call a rose by any other name would smell as sweet.",
+        source: "Romeo and Juliet",
+        category: "wisdom"
+    },
+    {
+        text: "Life's but a walking shadow, a poor player that struts and frets his hour upon the stage and then is heard no more.",
+        source: "Macbeth",
+        category: "life"
+    },
+    {
+        text: "Words, words, words.",
+        source: "Hamlet",
+        category: "famous"
+    },
+    {
+        text: "There are more things in heaven and earth, Horatio, than are dreamt of in your philosophy.",
+        source: "Hamlet",
+        category: "wisdom"
+    },
+    {
+        text: "Parting is such sweet sorrow.",
+        source: "Romeo and Juliet",
+        category: "love"
+    },
+    {
+        text: "O, beware, my lord, of jealousy; it is the green-eyed monster which doth mock the meat it feeds on.",
+        source: "Othello",
+        category: "wisdom"
+    },
+    {
+        text: "All that glisters is not gold.",
+        source: "The Merchant of Venice",
+        category: "famous"
+    },
+    {
+        text: "Love is blind, and lovers cannot see the pretty follies that themselves commit.",
+        source: "The Merchant of Venice",
+        category: "love"
+    },
+    {
+        text: "If music be the food of love, play on.",
+        source: "Twelfth Night",
+        category: "love"
+    },
+    {
+        text: "For never was a story of more woe than this of Juliet and her Romeo.",
+        source: "Romeo and Juliet",
+        category: "love"
+    },
+    {
+        text: "Doubt thou the stars are fire; doubt that the sun doth move; doubt truth to be a liar; but never doubt I love.",
+        source: "Hamlet",
+        category: "love"
+    },
+    {
+        text: "We know what we are, but know not what we may be.",
+        source: "Hamlet",
+        category: "wisdom"
+    }
+];
     
     // Заполняем цитаты на странице
     function populateQuotes() {
